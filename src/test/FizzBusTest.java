@@ -43,7 +43,7 @@ public class FizzBusTest {
 
 		assertEquals(retorno, valorEsperado);
 	}
-	
+
 	@Test
 	public void naoDeveSerSubistituidoCasoNaoSejaDivisivel() {
 		Integer valor = 7;
@@ -55,7 +55,7 @@ public class FizzBusTest {
 
 		assertEquals(retorno, valorEsperado);
 	}
-	
+
 	@Test
 	public void deveRetornarFooParaNumerosDivisiveisPorDois() {
 		Integer valor = 2;
@@ -67,40 +67,40 @@ public class FizzBusTest {
 
 		assertEquals(retorno, valorEsperado);
 	}
-	
+
 	@Test
 	public void deveRetornarFizzFooParaNumerosDivisiveisPorDoisETres() {
 		Integer valor = 6;
 		String valorEsperado = "FizzFoo";
-		
+
 		FizzBuzzGame fizzBuzzGame = new FizzBuzzGame();
-		
+
 		String retorno = fizzBuzzGame.executa(valor);
-		
+
 		assertEquals(retorno, valorEsperado);
 	}
-	
+
 	@Test
 	public void deveRetornarBuzzFooParaNumerosDivisiveisPorDoisECinco() {
 		Integer valor = 10;
 		String valorEsperado = "BuzzFoo";
-		
+
 		FizzBuzzGame fizzBuzzGame = new FizzBuzzGame();
-		
+
 		String retorno = fizzBuzzGame.executa(valor);
-		
+
 		assertEquals(retorno, valorEsperado);
 	}
-	
+
 	@Test
 	public void deveRetornarFizzBuzzFooParaNumerosDivisiveisPorDoisCincoETres() {
 		Integer valor = 30;
 		String valorEsperado = "FizzBuzzFoo";
-		
+
 		FizzBuzzGame fizzBuzzGame = new FizzBuzzGame();
-		
+
 		String retorno = fizzBuzzGame.executa(valor);
-		
+
 		assertEquals(retorno, valorEsperado);
 	}
 	
